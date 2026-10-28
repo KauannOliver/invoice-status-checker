@@ -50,3 +50,7 @@ No new distribution license is granted for this corporate source edition. Public
 ## Verification record
 
 See [snapshot checks and remaining limitations](docs/VERIFICATION.md).
+
+## Offline verification
+
+`python -m unittest discover -s tests -v` checks duplicate-invoice grouping, completed-row exclusion, result propagation, note preservation and rejection of invalid headers with synthetic temporary workbooks. It does not open a browser or contact a portal.

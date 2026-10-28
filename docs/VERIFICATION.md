@@ -13,3 +13,7 @@ Python application files passed syntax parsing. This does not execute imports, l
 - No deployment command, deploy workflow or new hosting integration is part of this update. Included Vercel configurations disable Git-driven deployments.
 - New source imports exclude local environments, databases, generated outputs and operational documents.
 - Existing Git history is preserved. Historical public names or assets may remain in old commits; current snapshots use neutral public presentation.
+
+## Synthetic workbook checks
+
+Four offline workbook tests passed with openpyxl. They cover grouping repeated invoices across sheets, ignoring already reviewed rows, updating all matching rows, retaining notes when the result has no reason, and failing on missing headers without changing the input. No real invoice, portal or browser session was used.
